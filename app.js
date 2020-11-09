@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser')
 //const connection = require("./model");
 const mongoose =require('mongoose');
-const port = 3000;
+const port = process.env.port || 3000;
 const app = express();
 
 //define the modules we use
